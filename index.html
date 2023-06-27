@@ -1,176 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <title>PaginaPractica</title>
-    <!-- Este Style es para que se realice la accion a todo lo que esta mencionando-->
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <title>Document</title>
+    <!-- Cambio de tipo de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Aqui termina el cambio. Se consigue en una pagina de internet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Texto y Parrafos -->
-    <h1>Mi primer heading</h1>
-    <h2>Mi segundo heading</h2>
-    <h3>Mi tercer heading</h3>
-    <h4>Mi cuarto heading</h4>
-    <h5>Mi quinto heading</h5>
-    <h6>Mi sexto heading</h6>
-    <p>Primer parrafo</p>
-    <p>Segundo parrafo</p>
-    <hr>
-    <h2>Nuevo titulo</h2>
-    <p>Parrafo con <span style="color: blue;">mas texto</span> para mostrar las etiquetas de span <br>y dividir este mismo texto
-    <br><br>Podemos trambiar bajar aun mas el texto
-    </p>
-    <!-- Los comentarios se pueden crear con Control KC despues de escribir el texto o pones < ! - - y listo-->
-    
-    <!-- Link -->
-    <a href="https://www.google.com.ve">Ir a Google</a>
-    <p>Para que el link te abra otras pestaña</p>
-    <a target="_blank" href="https://www.google.com.ve">Ir a Google</a>
-    <br>
-    <!-- Imagenes -->
-    <img src="Img/imagen1.png" width="200">
-    <!-- width manipula el ancho y height para lo alto pero si la imagen es cuadrada con solo uno ella se reduce por igual  -->
-    
-    <!--Formularios para interactuar con el usuario-->
-    <div>
-        <label for="Nombre">Nombre</label>
-        <input id="Nombre" name="nombre" placeholder="Coloca tu bombre"/>
-    </div>
-    <div>
-        <label for="Contraseña">Contraseña</label>
-        <input type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña">
-        <input type="button" value="Enviar">
-    </div>
-    <div>
-        <label for="Prueba">Prueba</label>
-        <input type="submit">
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="">
-    </div>
-    <div>
-        <label for="Seleccionar">Seleccionar</label>
-        <input type="Radio">
-    </div>
-    <div>
-        <label for="Marcar">Marcar</label>
-        <input type="checkbox" name="" id="">
-    </div>
-    <div>
-        <label for="Archivo">Archivo</label>
-        <input type="file">
-    </div>
-    <div>
-        <label for="Nombre">Nombre</label>
-        <input type="text" id="Nombre" name="Nombre" value="Miguel">
-    </div>
-    <div>
-        <label for="Comentarios">Comentarios</label>
-        <textarea name="Comentario" id="Comentario" cols="10" rows="5">Este es el comentario</textarea>
-        <input type="submit">
-    </div>
-    <div>
-        <!--Con respecto a los botones aqui tienes los tipo-->
-
-        <button type="button">Tipo de boton</button> <!--Tienes que decirle que hacer y se le peueden agregar mas etiquetas-->
-        <button type="button"><img src="Img/logo.png"/> Boton con imagen</button>
-
-        <button type="reset">Tipo de resetear</button> <!--Deja el formulario con los valores iniciales-->
-
-        <button type="submit">Tipo de submit</button> <!--Los envia con action-->
-
-        <!--Con respecto al enviar los datos recolectados. Al poner 
-            Action puedes escoger para donde enviar la informacion 
-            es decir una ruta ya sea a otro servidor, aplicacion, entre otros.-->
-        <!--Method es e metodo para mandar los datos GET (se mandan por URL que tiene un limte de caracteres) 
-            y POST (Se envian los datos a un Formulario que no tiene un limete de caracteres)-->
-    </div>
-    <br>
-    <hr>
-    <form action="/formulario" method="get">
-        <label for="Nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
-        <br>
-        <label for="Apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido">
-        <br>
-        <label for="Comentario">Comentarios</label>
-        <br>
-        <textarea name="Comentario" id="Comentario" placeholder="Ingrese comentarios" cols="30" rows="10"> </textarea>
-        <br>
-        <button type="submit">Enviar</button>
-        <hr>
-    </form>
-
-    <!--UL lista no ordenada
-    LI Intem de la lista-->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <!--OL lista ordenada-->
-    <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ol>
-    <ol>
-        <li value="10">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>Elemento 5
-            <ol>
-                <li style="list-style-type: lower-roman;">Sub elemento 5.1</li>
-                <li style="list-style-type: lower-roman;">Sub elemento 5.2</li>
-                <li style="list-style-type: lower-alpha;">Sub elemento 5.3</li>
-                <li style="list-style-type: lower-alpha;">Sub elemento 5.4</li>
-            </ol>
-        </li>
-    </ol>
-
-    <!--Tabla para productos table
-        tr la division 
-        th es la cabecera columnas
-        td son los productos-->
-
-        <!-- en HEAD se esta realizando la accion de cuadros con Style-->
-    <table style="width: 300px;"> <!--Aqui se realiza la separacion-->
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Laptop</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <td>CPU</td>
-                <td>30$$</td>
-            </tr>
-            <tr>
-                <td>Monitor Grande</td>
-                <td>10$</td>
-            </tr>
-        </tbody>
-        <!--tfoot contiene a un bloque de filas ( tr ) que representa a la sección de pie de una tabla
-            Es decir el Resultado de esta suma-->
-        <tfoot>
-            <td></td>
-            <td>40$ Total</td>
-        </tfoot>
-    </table>
-
+    <header>
+        <h1 id="titulo">Blog de Miguel Ochoa</h1>
+    </header>
+    <section class="container">
+        <article class="post">
+            <h2>Diseño 1</h2>
+            <p>Diseño de Laptop</p>
+            <img src="/Img/imagen1.png" width="400""">
+            <p>La laptop es un equipo compuesto por una pantalla líquida, alimentada con baterías o corriente alterna, puede durar más de dos horas de funcionamiento, es liviana (usualmente pesa menos de 12 libras), presenta teclado integrado, panel táctil para manejar el puntero en lugar del ratón, entre otras características.</p>
+        </article>
+        <article class="post">
+            <h2>Diseño 2</h2>
+            <p>Diseño de Leon</p>
+            <img src="/Img/LEon.jpg" width=400"">
+            <p>Consiste en la creación de una identidad visual reconocible que atraiga a los clientes potenciales. Aquí podemos referirnos a lo que es diseño de imagen de una empresa, ya que se utiliza esta área para crear una marca única y cautivadora.</p>
+        </article>
+        <article class="post">
+            <h2>Diseño 3</h2>
+            <p>Diseño de profundidad</p>
+            <img src="/Img/mar.jpg" width=400"">
+            <p>Se denomina profundidad a la distancia de un elemento con respecto a un plano horizontal de referencia cuando dicho elemento se encuentra por debajo de la referencia. Cuando ocurre lo contrario se denomina elevación, nivel o simplemente altura.</p>
+        </article>
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir arriba</a>
+            <a href="micorreo@hotmail.com">Contáctame aquí</a>
+        </section>
+        <p>Blog terminado</p>
+    </footer>
 </body>
 </html>

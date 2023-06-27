@@ -1,0 +1,78 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+/* titulo de la pagina y color de la pagina */
+body {
+margin: 0;
+background-color: #dbd7d7;
+}
+/* color de fondo del titulo, color del texto del titulo y sus medidas */
+header{
+    background-color: #364552;
+    color: white;
+    padding: 1rem 0.5rem;
+}
+/* tamaño del titulo y centrado */
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Aqui comienza el cambio del resto de la pagina */
+
+/* Se crea la Class de container para poder centrar el contenido pero el texto a la izquierda */
+.container {
+    width: 400px; /*Se puso 400px porque las imagines tienes mas o menos esa medida*/
+    margin: 0 auto; /* Para que el contenido se centre*/
+}
+
+/* Se comienza a modificar lo que contiene el articulo */
+section article{
+    transition: box-shadow 0.3s ease; /* Inicio el box, el tiempo de transicion y aceleracion y desaceleracion de la animacion*/
+    background-color: #efff;
+    margin: 1rem 0; /* 1rem verticar y cero horizontal*/
+    border-radius: 0.5rem; /* los bordesd e las tarjetas*/
+    padding: 0.25rem 0; /* espacio para las letras con los bordes*/
+    cursor: pointer; /* animacion del cursor*/
+}
+
+/* sombra para la transicion */
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.4);
+}
+
+/* margen del texto de cada imagen  */
+section article h2, section article p {
+    margin: 1rem;
+}
+
+/* Aqui comienza el pie de pagina */
+
+/* Aqui se cambi el color de fondo, la distancia del escrito y el color del escrito */
+footer{
+    background-color: #364552;
+    padding: 2rem;
+    color: white;
+}
+
+/* Poner los link hacia la derecha */
+footer section{
+    float: right;
+}
+
+/* Aqui se cuadra el escrito junto con el link, eliminando el margen entre ellos */
+footer p{
+    margin: 0;
+}
+
+/* Aqui se agrega la transicion del cursor, su color y la duracion  */
+footer a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+/* Cuando el cursor pasa por arriba cambia el color */
+footer a:hover{
+    color: cornflowerblue;
+}
